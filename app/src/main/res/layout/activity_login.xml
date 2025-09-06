@@ -27,15 +27,20 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/hexagon_2307350"
-        android:tint="#FF9800"
+        app:srcCompat="@drawable/hexagon_2307350"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:tint="@color/naranja"
         />
 
+
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contraseña"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginBottom="32dp"
-        android:text="Password:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +48,33 @@
         android:layout_marginTop="350dp"
         android:background="@color/white"
         android:textSize="14dp"
+        android:hint="Contraseña"
         />
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="425dp"
+        android:layout_marginHorizontal="19dp"
+        android:backgroundTint="#FF9800"
+        app:cardCornerRadius="11dp"
+        />
+
+    <Button
+        android:id="@+id/iniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="430dp"
+        android:layout_marginHorizontal="19dp"
+        android:background="#FF9800"
+        android:text="Iniciar sesión"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
