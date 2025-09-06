@@ -37,12 +37,12 @@ class menuActivity : AppCompatActivity() {
     }
 
     private fun navigateToPromedio() {
-        val intent = Intent(this, ConversorActivity::class.java)
+        val intent = Intent(this, CalculadoraActivity::class.java)
         startActivity(intent)
     }
 
     private fun navigateToConversor() {
-        val intent = Intent(this, ConversorActivity::class.java)
+        val intent = Intent(this, CalculadoraActivity::class.java)
         startActivity(intent)
     }
 

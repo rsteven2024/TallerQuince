@@ -29,7 +29,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        // Ajustar insets para que no se superponga con la barra del sistema
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
